@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Page description" />
+    <meta name="theme-color" content="#000" />
+    <title>Joke Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/formalize.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper container">
+      <div class="left-col">
+        <header class="header">
+          <nav class="nav font-semi-bold">
+            <li class="nav-item active-nav-item"><a href="#">Generator</a></li>
+            <li class="nav-item"><a href="#">Search</a></li>
+            <li class="nav-item"><a href="#">Developer</a></li>
+            <li class="nav-item"><a href="#">GitHub</a></li>
+          </nav>
+        </header>
+        <main class="main">
+          <div class="main-container">
+            <h3 class="main__heading font-bold">
+              Try Not To Laugh To My Dad Joke! 🏆
+            </h3>
+            <div class="joke-container">
+              <div class="joke__transition"></div>
+              <div class="joke-inner-container">
+                <div class="rating">
+                  <span class="rating-item">🤣</span>
+                  <span class="rating-item">😁</span>
+                  <span class="rating-item">😕</span>
+                  <span class="rating-item">🤮</span>
+                </div>
+                <p class="joke font-semi-bold">
+                  Press <kbd class="kbd">Space</kbd> on your keyboard
+                  <br />or<br />Click the button below
+                </p>
+                <p class="joke__guide">
+                  Press <kbd class="kbd">Space</kbd> on Your Keyboard to
+                  Generate New Joke
+                </p>
+              </div>
+            </div>
+            <div class="buttons">
+              <div class="generate-btn button -regular center">
+                Generate New Joke
+              </div>
+              <div class="twitter-btn button -regular center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="#1ea1f1"
+                >
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="right-col">
+        <div class="outer-circle circle-border">
+          <img
+            class="emoji-1 emoji"
+            src="asset/emoji-1.png"
+            alt="emoji with glasses"
+          />
+          <img
+            class="emoji-4 emoji"
+            src="asset/emoji-4.png"
+            alt="emoji laugh"
+          />
+          <div class="inner-circle-1 circle-border inner-circle">
+            <img
+              class="emoji-2 emoji"
+              src="asset/emoji-2.png"
+              alt="emoji smile"
+            />
+            <img
+              class="emoji-3 emoji"
+              src="asset/emoji-3.png"
+              alt="emoji love"
+            />
+            <div class="inner-circle-2 circle-border inner-circle">
+              <div class="core-circle circle-border inner-circle">
+                <span class="text-to-speech-btn">
+                  <img src="asset/voice-icon.png" alt="" />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="toast toast--hidden font-semi-bold">
+      <div class="toast__body">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+        <p class="toast__message">Your reaction submitted</p>
+      </div>
+      <div class="toast__timer"></div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
